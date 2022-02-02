@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Zen+Kurenaido&display=swap');
+body{
+	background-color: #E1E5EC;
+	color: black;
+	text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.container{
+  display: flex;
+	justify-content: center;
+  position: relative;
+  top: 40px;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    background: #e3edf7;
+    height: 800px;
+    width: 800px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+          -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: 0.5s;
+  }
+
+.title{
+  position: relative;
+  top: 20px;
+  color: #313552;
+  font-weight: bolder;
+}
+
+img{
+  position: relative;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 30px;
+}
+
+.line{
+  border-top: solid 1px;
+  width: 500px;
+  position: relative;
+  top: 90px;
+  color: #313552;
+}
+
+p{
+  font-size: 30px;
+  color: #313552;
+  position: relative;
+  top: 110px;
+}
+
+.social-media{
+  position: absolute;
+  top: 900px;
+	display: flex;
+	justify-content: center;
+}
+
+a{
+	display: flex;
+	background: #e3edf7;
+	height: 75px;
+	width: 75px;
+	margin: 0 15px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transition: 0.5s;
+}
+
+a i{
+	font-size: 35px;
+	color: #777;
+	transform: 0.5s;
+}
+
+a:hover{
+	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+				-0.5px -0.5px 0px rgba(255,255,255,1),
+				0.5px 0.5px 0px rgba(0,0,0,0.15),
+				0px 12px 10px -10px rgba(0,0,0,0.05);
+
+	border: 1px solid rgba(0,0,0,0.01);
+
+	transition: 0.5s;
+
+	transform: translateY(2px);
+
+}
+
+a:hover i{
+	transform: scale(0.90);
+
+}
+
+a:hover .fa-facebook{
+	color: #3b5998;
+}
+
+a:hover .fa-linkedin{
+	color: #0C65C2;
+}
+
+a:hover .fa-github{
+	color: black;
+}
+
+a:hover .fa-instagram{
+	color: #f14843;
+}
+
+a:hover .fa-youtube{
+	color: #FF0000;
+}
+
+.styled{
+  border-radius: 30%;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(211, 236, 167);
+  font-size:15px;
+}
+
+div[class*=box] {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  top: 40px;
+  font-size: 30px;
+}
+
+.btn-one {
+  color: #313552;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: black;
+  border-bottom-color: black;
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+.frame{
+  position: relative;
+  top: 120px;
+}
